@@ -20,10 +20,16 @@
              ["src/{{sanitized}}/services/nrepl.clj" (render "services/nrepl.clj" data)]
 
              ["src/{{sanitized}}/snippets/layouts.clj" (render "snippets/layouts.clj" data)]
-             ["src/{{sanitized}}/snippets/home.clj" (render "snippets/home.clj" data)]
+
              ["src/{{sanitized}}/handlers/home.clj" (render "handlers/home.clj" data)]
+
+             ["src/{{sanitized}}/snippets/home.clj" (render "snippets/home.clj" data)]
              ["src/{{sanitized}}/widgets/home.clj" (render "widgets/home.clj" data)]
+
+             ["src/{{sanitized}}/snippets/shared.clj" (render "snippets/shared.clj" data)]
+             ["src/{{sanitized}}/widgets/shared.clj" (render "widgets/shared.clj" data)]
 
              ["resources/templates/layouts/application.html" (render "resources/templates/layouts/application.html" data)]
              ["resources/templates/home/index.html" (render "resources/templates/home/index.html" data)]
+             ["resources/templates/shared/header.html" (render "resources/templates/shared/header.html" data)]
 )))

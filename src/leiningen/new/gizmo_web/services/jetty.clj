@@ -14,4 +14,4 @@
   :stop (fn [service])
   :start (fn [service]
            (reset-state service
-                        (jetty/run-jetty #'app-core/dev-app-handler (config service)))))
+                        (jetty/run-jetty #'app-core/app (config service)))))

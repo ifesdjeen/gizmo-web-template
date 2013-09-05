@@ -2,7 +2,8 @@
   (:gen-class)
   (:require [clojure.tools.cli :refer [cli]]
             [compojure.handler :refer [api]]
-            [clojurewerkz.gizmo.core :refer [require-widgets require-snippets require-handlers require-services]]
+            [clojurewerkz.gizmo.core :refer [require-widgets require-snippets require-handlers
+                                             require-services register-snippet-reload]]
             [clojurewerkz.gizmo.config :refer [load-config!]]
             [clojurewerkz.gizmo.service :refer [start-all! all-services]]))
 
@@ -17,8 +18,6 @@
   (require-handlers "{{name}}")
   (require-widgets "{{name}}")
   (require-services "{{name}}")
+  (register-snippet-reload "{{name}}")
 
-  (println 'services (all-services))
-  (start-all!)
-  (while true
-    (Thread/sleep 10)))
+  (start-all!))

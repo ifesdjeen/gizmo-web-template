@@ -8,15 +8,10 @@
 
             [{{name}}.routes :as routes]))
 
-(defn make-app
-  []
+(def app
   (-> (api routes/main-routes)
       wrap-responder
       wrap-params
       (wrap-resource "public")
       wrap-reload
       (wrap-stacktrace :color? true)))
-
-(defn- dev-app-handler
-  [req]
-  ((make-app) req))
