@@ -1,6 +1,6 @@
 # gizmo-web
 
-A Leiningen template for FIXME.
+A Leiningen template for Gizmo-web, ClojureWerkz web library.
 
 ## Usage
 
