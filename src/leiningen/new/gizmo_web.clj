@@ -32,4 +32,6 @@
              ["resources/templates/layouts/application.html" (render "resources/templates/layouts/application.html" data)]
              ["resources/templates/home/index.html" (render "resources/templates/home/index.html" data)]
              ["resources/templates/shared/header.html" (render "resources/templates/shared/header.html" data)]
-)))
+
+             ["resources/public/stylesheets/application.css" (render "resources/public/stylesheets/application.css" data)]
+             ["resources/public/javascripts/application.js" (render "resources/public/javascripts/application.js" data)])))
