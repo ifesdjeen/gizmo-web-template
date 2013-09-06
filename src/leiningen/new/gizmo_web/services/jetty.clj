@@ -8,10 +8,11 @@
 (defservice jetty-service
   :config #(:jetty config/settings)
   :alive (fn [service]
-           (println service)
-
-           )
-  :stop (fn [service])
+           (and service
+               (state service)
+               (.isRunning (state service))))
+  :stop (fn [service]
+          (.stop (state service)))
   :start (fn [service]
            (reset-state service
                         (jetty/run-jetty #'app-core/app (config service)))))
