@@ -2,10 +2,11 @@
   (:gen-class)
   (:require [clojure.tools.cli :refer [cli]]
             [compojure.handler :refer [api]]
-            [clojurewerkz.gizmo.core :refer [require-widgets require-snippets require-handlers
-                                             require-services register-snippet-reload]]
-            [clojurewerkz.gizmo.config :refer [load-config!]]
-            [clojurewerkz.gizmo.service :refer [start-all! all-services]]))
+            [clojurewerkz.gizmo
+             [core :refer [require-widgets require-snippets require-handlers
+                           require-services register-snippet-reload]]
+             [config :refer [load-config!]]
+             [service :refer [start-all! all-services]]]))
 
 (alter-var-root #'*out* (constantly *out*))
 
