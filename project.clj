@@ -1,4 +1,4 @@
-(defproject gizmo-web/lein-template "1.0.0-apha2-SNAPSHOT"
+(defproject gizmo-web/lein-template "1.0.0-apha2"
   :description "Leiningen template for Gizmo, ClojureWerkz web library"
   :url "http://github.com/ifesdjeen/gizmo-web-template"
   :license {:name "Eclipse Public License"
