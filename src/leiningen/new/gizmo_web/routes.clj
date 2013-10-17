@@ -1,5 +1,6 @@
 (ns {{name}}.routes
-    (:use [clojurewerkz.route-one.compojure])
+    (:use [clojurewerkz.route-one.compojure]
+          [{{name}}.handlers.home])
     (:require [compojure.core :as compojure]
               [compojure.route :as route]))
 
